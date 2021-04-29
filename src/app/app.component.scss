@@ -113,12 +113,11 @@
   .half-ellipse {
     height: 100%;
     left: -200px;
-    color: lightgreen;
   }
 
   &__text {
     color: #38CCF5;
-    font-size: 22px;
+    font-size: 23px;
   }
 
   .icon {
@@ -154,6 +153,7 @@
 
   &__check {
     width: 20px;
+    margin-top: 5px;
   }
 
   &__text {
@@ -230,6 +230,140 @@
     img {
       height: 13px;
       cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    margin-top: 20px;
+
+    .orange-curve {
+      right: 0;
+      top: -20px;
+    }
+
+    &__heading {
+      text-align: center;
+
+      span {
+        color: #FF6E4E;
+      }
+    }
+
+    &__info {
+      text-align: center;
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    &__form {
+      height: auto;
+      margin-bottom: 30px;
+    }
+
+    .main-form {
+      padding-top: 10px;
+      padding: 10px 20px 30px 20px;
+
+      > span {
+        color: #008CC9;
+      }
+    }
+  }
+
+  .offer {
+    height: 250px;
+    padding: 0 30px;
+
+    &__text {
+      color: #008CC9;
+    }
+
+    .icon {
+      width: 20px;
+    }
+
+    .facebook {
+      top: -35px;
+      right: 50px;
+    }
+
+    .instagram {
+      top: 110px;
+      right: 75px;
+    }
+
+    .google-plus {
+      top: 40px;
+      right: -15px;
+    }
+  }
+
+  .benefits {
+
+    height: auto;
+    padding: 30px 5px;
+
+    &__header {
+      text-align: center;
+      font-size: 27px;
+      padding: 40px;
+      span {
+        color: #008CC9;
+      }
+    }
+
+    &__check {
+      width: 15px;
+      margin-top: 8px;
+    }
+
+    &__text {
+      font-size: 17px;
+    }
+  }
+
+  .testimonials {
+    height: auto;
+    background-image: linear-gradient(to bottom, #38CCF5, #3ECCF5, #42CCF5, #36C1EE,
+                    #119FD6, #2A97BF, #108ABF);
+
+    &__record {
+      width: 100%;
+      padding: 40px 10px;
+    }
+
+    &__quote {
+
+      img {
+        width: 35px;
+      }
+
+      span {
+        font-size: 23px;
+      }
+    }
+
+    &__text {
+
+      span {
+        font-size: 16px;
+      }
+
+    }
+
+    &__profile {
+
+      h5 {
+        font-size: 15px;
+        margin-bottom: 3px;
+      }
+
+      span {
+        font-size: 15px;
+      }
     }
   }
 }

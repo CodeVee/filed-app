@@ -85,8 +85,34 @@
       }
     }
 
+    .form-container {
+      height: 36.33px;
+      background-color: #FFFFFF;
+      border-radius: 5px;
+      border: 1px solid #DEDEDE;
+      padding: 0 7px;
+      font-size: 12px;
+
+      .form-select {
+        border: 0;
+        width: 44%;
+        outline: none;
+      }
+
+      > div {
+        width: 150px;
+        border-bottom: 1px solid #DEDEDE;
+
+        input {
+          border: none;
+          width: 80%;
+          outline: none;
+        }
+      }
+    }
+
     .form-label {
-      font-size: 10px;
+      font-size: 12px;
       top: 11px;
       left: 11px;
       transition: 0.2s;
@@ -94,7 +120,7 @@
 
     .form-input {
       border-radius: 5px;
-      padding: 10px;
+      padding: 12px;
       border: 1px solid #DEDEDE;
       font-size: 10px;
       width: 100%;

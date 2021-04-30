@@ -1,0 +1,462 @@
+.header {
+  margin-top: 60px;
+
+  .ellipse {
+    right: 320px;
+    top: 0;
+    width: 256px;
+  }
+
+  .repeat {
+    right: 0;
+    top: 40px;
+    width: 70px;
+  }
+
+  .bluegrid {
+    top: 260px;
+    width: 170px;
+  }
+
+  &__logo {
+    max-width: 110px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 30px;
+
+    span {
+      color: #38ccf5;
+    }
+  }
+
+  &__info {
+    font-size: 20px;
+    display: inline-block;
+    width: 60%;
+  }
+
+  .artboard {
+    width: 500px;
+    margin-top: 80px;
+  }
+
+  .tiny {
+    right: 80px;
+    top: 230px;
+    width: 20px;
+  }
+
+  .mid {
+    right: 50px;
+    top: 200px;
+    width: 30px;
+  }
+
+  .large {
+    right: 0px;
+    top: 150px;
+    width: 50px;
+  }
+
+  &__form {
+    height: 430px;
+  }
+
+  .main-form {
+    background-color: #FBFBFB;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px #00000029;
+    padding-top: 50px;
+
+    &__header {
+      font-size: 25px;
+    }
+
+    .form-collection {
+      &--half {
+        width: 48%;
+      }
+    }
+
+    .form-container {
+      height: 36.33px;
+      background-color: #FFFFFF;
+      border-radius: 5px;
+      border: 1px solid #DEDEDE;
+      padding: 0 7px;
+      font-size: 12px;
+
+      .form-select {
+        width: 44%;
+
+        img {
+          right: 0;
+          width: 10px;
+        }
+
+        select {
+          flex: 1;
+          outline: none;
+          border: none;
+          background-image: none;
+          background-color: transparent;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          box-shadow: none;
+          appearance: none;
+          z-index: 1;
+          cursor: pointer;
+        }
+      }
+
+      .form-tel {
+        width: 150px;
+        border-bottom: 1px solid #DEDEDE;
+
+        input {
+          border: none;
+          width: 80%;
+          outline: none;
+        }
+      }
+    }
+
+    .form-label {
+      font-size: 12px;
+      top: 11px;
+      left: 11px;
+      transition: 0.2s;
+    }
+
+    .form-input {
+      border-radius: 5px;
+      padding: 12px;
+      border: 1px solid #DEDEDE;
+      font-size: 10px;
+      width: 100%;
+      outline: none;
+
+       &:focus, &:valid {
+        border: 1.5px solid #008CC9;
+
+        + .form-label {
+          top: -7px;
+          transition: 0.2s;
+          background-color: #FFFFFF;
+          padding: 0 3px;
+          color: #707070;
+        }
+      }
+    }
+
+    .btn {
+      background-color: #FF6E4E;
+      border-color: #FF6E4E;
+      color: #FFFFFF;
+    }
+  }
+}
+
+.offer {
+  height: 350px;
+  background-color: lighten($color: #DEDEDE, $amount: 10) ;
+  overflow: hidden;
+
+  .orange-curve {
+    right: 0;
+    top: 0;
+    width: 140px;
+  }
+
+  .half-ellipse {
+    height: 100%;
+    left: -200px;
+  }
+
+  .bluegrid {
+    top: 180px;
+    left: 73px;
+    width: 170px;
+  }
+
+  .bluegrid-2 {
+    bottom: -45px;
+    right: 0px;
+    width: 130px;
+    transform: rotate(38deg);
+  }
+
+  &__text {
+    color: #38CCF5;
+    font-size: 22.32px;
+  }
+
+  .icon {
+    width: 30px;
+  }
+
+  .facebook {
+    top: -55px;
+    right: -22px;
+  }
+
+  .instagram {
+    top: 90px;
+    right: 50px;
+  }
+
+  .google-plus {
+    top: 60px;
+    right: -150px;
+  }
+}
+
+.benefits {
+
+  height: 260px;
+
+  &__header {
+    font-size: 24px;
+    span {
+      color: #38CCF5;
+    }
+  }
+
+  &__check {
+    width: 20px;
+    margin-top: 5px;
+  }
+
+  &__text {
+    font-size: 14px;
+  }
+}
+
+.testimonials {
+  height: 350px;
+  background-image: linear-gradient(to right, #38CCF5, #3ECCF5, #42CCF5, #36C1EE,
+                  #119FD6, #2A97BF, #108ABF);
+
+  &__record {
+    width: 25%;
+    color: #FFFFFF;
+  }
+  &__quote {
+
+    img {
+      width: 35px;
+    }
+
+    span {
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+
+    span {
+      font-weight: 300;
+      font-size: 13px;
+    }
+
+  }
+
+  &__profile {
+    img {
+      width: 95px;
+      height: 95px;
+      border-radius: 50%;
+      margin-right: 20px;
+      object-fit: cover;
+    }
+
+    h5 {
+      font-size: 15px;
+      margin-bottom: 3px;
+    }
+
+    span {
+      font-size: 12px;
+      font-style: italic;
+    }
+  }
+}
+
+.footer {
+  height: 70px;
+  background-color: #595957;
+  color: #FFFFFF;
+  font-size: 13px;
+
+  &__nav {
+    list-style: none;
+    width: 500px;
+
+    li {
+      cursor: pointer;
+    }
+  }
+
+  &__social {
+    width: 100px;
+    img {
+      height: 13px;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    margin-top: 20px;
+
+    .orange-curve {
+      right: 0;
+      top: -20px;
+    }
+
+    .three-repeat {
+      bottom: 17px;
+      left: 4px;
+      width: 55px;
+    }
+
+    &__heading {
+      text-align: center;
+
+      span {
+        color: #FF6E4E;
+      }
+    }
+
+    &__info {
+      text-align: center;
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    &__form {
+      height: auto;
+      margin-bottom: 30px;
+    }
+
+    .main-form {
+      padding-top: 10px;
+      padding: 10px 20px 30px 20px;
+
+      > span {
+        color: #008CC9;
+      }
+    }
+  }
+
+  .offer {
+    height: 250px;
+    padding: 0 30px;
+
+    &__text {
+      color: #008CC9;
+    }
+
+    .icon {
+      width: 20px;
+    }
+
+    .facebook {
+      top: -35px;
+      right: 50px;
+    }
+
+    .instagram {
+      top: 110px;
+      right: 75px;
+    }
+
+    .google-plus {
+      top: 40px;
+      right: -15px;
+    }
+  }
+
+  .benefits {
+
+    height: auto;
+    padding: 30px 5px;
+
+    .three-repeat {
+      width: 60px;
+      right: 0;
+      top: 70px;
+    }
+
+
+    &__header {
+      text-align: center;
+      font-size: 27px;
+      font-weight: 700;
+      padding: 40px;
+      span {
+        color: #008CC9;
+      }
+    }
+
+    &__check {
+      width: 15px;
+      margin-top: 8px;
+    }
+
+    &__text {
+      font-size: 17px;
+    }
+  }
+
+  .testimonials {
+    height: auto;
+    background-image: linear-gradient(to bottom, #38CCF5, #3ECCF5, #42CCF5, #36C1EE,
+                    #119FD6, #2A97BF, #108ABF);
+
+    &__record {
+      width: 100%;
+      padding: 40px 10px;
+    }
+
+    &__quote {
+
+      img {
+        width: 35px;
+      }
+
+      span {
+        font-size: 22px;
+      }
+    }
+
+    &__text {
+
+      span {
+        font-size: 15.71px;
+      }
+
+    }
+
+    &__profile {
+
+      h5 {
+        font-size: 15px;
+        margin-bottom: 3px;
+      }
+
+      span {
+        font-size: 15px;
+      }
+    }
+  }
+}

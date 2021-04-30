@@ -79,6 +79,19 @@
       font-size: 25px;
     }
 
+    .form-collection {
+      &--half {
+        width: 48%;
+      }
+    }
+
+    .form-label {
+      font-size: 10px;
+      top: 11px;
+      left: 11px;
+      transition: 0.2s;
+    }
+
     .form-input {
       border-radius: 5px;
       padding: 10px;
@@ -87,13 +100,17 @@
       width: 100%;
       outline: none;
 
-      &:active, &:focus {
+       &:focus, &:valid {
         outline: auto;
         outline-color: #008CC9;
-      }
 
-      &--half {
-        width: 48%;
+        + .form-label {
+          top: -7px;
+          transition: 0.2s;
+          background-color: #FFFFFF;
+          padding: 0 3px;
+          color: #707070;
+        }
       }
     }
 
@@ -136,7 +153,7 @@
 
   &__text {
     color: #38CCF5;
-    font-size: 22px;
+    font-size: 22.3px;
   }
 
   .icon {

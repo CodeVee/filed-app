@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="230" height="165" viewBox="0 0 230 165">
+    <defs>
+        <style>.a{fill:none;}.b{clip-path:url(#a);}.c{fill:#38CCF5;opacity:0.5;}</style>
+        <clipPath id="a"><rect class="a" width="230" height="165"/></clipPath>
+    </defs>
+    <g class="b">
+        <g transform="translate(-158 -154)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-128 -154)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-98 -154)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-68 -154)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-38 -154)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-158 -124)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-128 -124)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-98 -124)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-68 -124)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-38 -124)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-158 -94)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-128 -94)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-98 -94)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-68 -94)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-38 -94)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-158 -64)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-128 -64)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-98 -64)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-68 -64)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-38 -64)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-158 -34)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-128 -34)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-98 -34)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-68 -34)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-38 -34)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+
+        <g transform="translate(-8 -34)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-8 -64)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-8 -94)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-8 -124)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-8 -154)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+
+        <g transform="translate(22 -34)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(22 -64)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(22 -94)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(22 -124)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(22 -154)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+
+        <g transform="translate(52 -34)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(52 -64)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(52 -94)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(52 -124)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(52 -154)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+
+        <g transform="translate(52 -4)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(22 -4)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-8 -4)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-38 -4)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-68 -4)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-98 -4)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-128 -4)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>
+        <g transform="translate(-158 -4)"><circle class="c" cx="5" cy="5" r="5" transform="translate(158 154)"/></g>  
+    </g>
+</svg>

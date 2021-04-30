@@ -13,6 +13,11 @@
     width: 70px;
   }
 
+  .bluegrid {
+    top: 260px;
+    width: 170px;
+  }
+
   &__logo {
     max-width: 110px;
 
@@ -103,6 +108,7 @@
 .offer {
   height: 350px;
   background-color: lighten($color: #DEDEDE, $amount: 10) ;
+  overflow: hidden;
 
   .orange-curve {
     right: 0;
@@ -115,9 +121,22 @@
     left: -200px;
   }
 
+  .bluegrid {
+    top: 180px;
+    left: 73px;
+    width: 170px;
+  }
+
+  .bluegrid-2 {
+    bottom: -45px;
+    right: 0px;
+    width: 130px;
+    transform: rotate(38deg);
+  }
+
   &__text {
     color: #38CCF5;
-    font-size: 23px;
+    font-size: 22px;
   }
 
   .icon {
@@ -244,6 +263,12 @@
       top: -20px;
     }
 
+    .three-repeat {
+      bottom: 17px;
+      left: 4px;
+      width: 55px;
+    }
+
     &__heading {
       text-align: center;
 
@@ -307,9 +332,17 @@
     height: auto;
     padding: 30px 5px;
 
+    .three-repeat {
+      width: 60px;
+      right: 0;
+      top: 70px;
+    }
+
+
     &__header {
       text-align: center;
       font-size: 27px;
+      font-weight: 700;
       padding: 40px;
       span {
         color: #008CC9;
@@ -343,14 +376,14 @@
       }
 
       span {
-        font-size: 23px;
+        font-size: 22px;
       }
     }
 
     &__text {
 
       span {
-        font-size: 16px;
+        font-size: 15.71px;
       }
 
     }

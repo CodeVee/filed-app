@@ -29,23 +29,23 @@
             <h3 class="main-form__header font-weight-bold d-none d-md-block">We’ll be in touch to get your trial set up.</h3>
             <small class="d-none d-md-block">Fill Out Form.</small>
             <span class="d-md-none">Fill out details</span>
-            <form class="mt-2">
+            <form [formGroup]="trialForm" (ngSubmit)="onSubmit()" class="mt-2">
               <div class="d-flex justify-content-between mb-3">
                 <div class="form-collection form-collection--half position-relative">
-                  <input id="first_name" class="form-input" required type="text">
+                  <input formControlName="firstName" id="first_name" class="form-input" required type="text">
                   <label for="first_name" class="form-label position-absolute">First Name *</label>
                 </div>
                 <div class="form-collection form-collection--half position-relative">
-                  <input id="last_name" class="form-input" required type="text">
+                  <input formControlName="lastName" id="last_name" class="form-input" required type="text">
                   <label for="last_name" class="form-label position-absolute">Last Name *</label>
                 </div>
               </div>
               <div class="form-collection position-relative mb-3">
-                <input id="email" type="email" class="form-input" required type="text">
+                <input formControlName="email" id="email" type="email" class="form-input" required type="text">
                 <label for="email" class="form-label position-absolute">Work Email *</label>
               </div>
               <div class="form-collection position-relative mb-3">
-                <input id="budget" class="form-input" required type="text">
+                <input formControlName="monthlyBudget" id="budget" class="form-input" required type="text">
                 <label for="budget" class="form-label position-absolute">Monthly Advertising Budget *</label>
               </div>
               <div class="form-container mb-3 d-flex justify-content-between">
@@ -58,10 +58,15 @@
                 </div>
                 <div class="form-tel d-flex align-items-center justify-content-between align-self-center">
                   <span class="prefix">+234</span>
-                  <input type="tel"/>
+                  <input formControlName="phone" type="tel"/>
                 </div>
               </div>
-              <button class="btn btn-block">GET FREE TRIAL</button>
+              <button class="btn btn-block" [disabled]="!trialForm.valid || loading">
+                GET FREE TRIAL
+                <div [hidden]="!loading" class="spinner-border" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+              </button>
             </form>
           </div>
         </div>

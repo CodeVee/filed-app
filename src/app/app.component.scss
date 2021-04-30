@@ -101,8 +101,7 @@
       outline: none;
 
        &:focus, &:valid {
-        outline: auto;
-        outline-color: #008CC9;
+        border: 1.5px solid #008CC9;
 
         + .form-label {
           top: -7px;
@@ -153,7 +152,7 @@
 
   &__text {
     color: #38CCF5;
-    font-size: 22.3px;
+    font-size: 22.32px;
   }
 
   .icon {

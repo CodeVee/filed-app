@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PaymentModule } from './payment/payment.module';
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
   declarations: [
@@ -11,6 +13,8 @@ import { PaymentModule } from './payment/payment.module';
   ],
   imports: [
     BrowserModule,
+    StoreModule.forRoot({}, {}),
+    EffectsModule.forRoot([]),
     PaymentModule,
     AppRoutingModule
   ],

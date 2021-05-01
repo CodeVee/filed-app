@@ -13,7 +13,7 @@ export const getUser = createSelector(
     state => state.user
 );
 
-export const getloading = createSelector(
+export const getLoading = createSelector(
   getPaymentFeatureState,
   state => state.loading
 );

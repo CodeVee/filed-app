@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Store } from '@ngrx/store';
 import { User } from '../shared/user.model';
+import { getLoading, State } from '../state';
+import { getFreeTrial } from '../state/actions/trial-page.actions';
 
 @Component({
   selector: 'app-trial',
@@ -10,7 +13,7 @@ import { User } from '../shared/user.model';
 export class TrialComponent implements OnInit {
 
   trialForm!: FormGroup;
-  loading = false;
+  loading = this.store.select(getLoading);
   request: User = {
     firstName: '',
     lastName: '',
@@ -19,7 +22,7 @@ export class TrialComponent implements OnInit {
     phoneNumber: 0
   };
 
-  constructor(private fb: FormBuilder) { }
+  constructor(private fb: FormBuilder, private store: Store<State>) { }
 
   ngOnInit(): void {
     this.initializeForm();
@@ -36,11 +39,7 @@ export class TrialComponent implements OnInit {
   }
 
   onSubmit(): void {
-    this.loading = true;
-    setTimeout(() => {
-      console.log(this.trialForm.value, this.trialForm.valid);
-      this.loading = false;
-    }, 2000);
+    this.store.dispatch(getFreeTrial({ user : this.request }));
   }
 
 }

@@ -61,9 +61,9 @@
                   <input formControlName="phone" type="tel"/>
                 </div>
               </div>
-              <button class="btn btn-block" [disabled]="!trialForm.valid || loading">
+              <button class="btn btn-block" [disabled]="!trialForm.valid || (loading | async)">
                 GET FREE TRIAL
-                <div [hidden]="!loading" class="spinner-border" role="status">
+                <div [hidden]="!(loading | async)" class="spinner-border" role="status">
                   <span class="sr-only">Loading...</span>
                 </div>
               </button>

@@ -10,6 +10,7 @@ import { PaymentRoutingModule } from './payment-routing.module';
 import { TrialComponent } from './trial/trial.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { PaymentEffects } from './state/payment.effects';
+import { fakeBackendProvider } from './shared/fake-backend.interceptor';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { PaymentEffects } from './state/payment.effects';
     ReactiveFormsModule,
     StoreModule.forFeature(featureKey, reducer),
     EffectsModule.forFeature([ PaymentEffects ])
-  ]
+  ],
+  providers: [fakeBackendProvider]
 })
 export class PaymentModule { }

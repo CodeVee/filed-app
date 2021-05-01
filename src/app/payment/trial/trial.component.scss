@@ -126,6 +126,10 @@
           outline: none;
         }
       }
+
+      .invalid-btm {
+        border-bottom: 1px solid #FF6E4E;
+      }
     }
 
     .form-label {
@@ -153,6 +157,12 @@
           padding: 0 3px;
           color: #707070;
         }
+      }
+    }
+
+    .invalid {
+      .form-input {
+        border: 1.5px solid #FF6E4E;
       }
     }
 

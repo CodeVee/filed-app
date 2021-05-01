@@ -31,20 +31,20 @@
             <span class="d-md-none">Fill out details</span>
             <form [formGroup]="trialForm" (ngSubmit)="onSubmit()" class="mt-2">
               <div class="d-flex justify-content-between mb-3">
-                <div class="form-collection form-collection--half position-relative">
+                <div [ngClass]="{'invalid':  validateControl('firstName')}" class="form-collection form-collection--half position-relative">
                   <input formControlName="firstName" id="first_name" class="form-input" required type="text">
                   <label for="first_name" class="form-label position-absolute">First Name *</label>
                 </div>
-                <div class="form-collection form-collection--half position-relative">
+                <div [ngClass]="{'invalid':  validateControl('lastName')}" class="form-collection form-collection--half position-relative">
                   <input formControlName="lastName" id="last_name" class="form-input" required type="text">
                   <label for="last_name" class="form-label position-absolute">Last Name *</label>
                 </div>
               </div>
-              <div class="form-collection position-relative mb-3">
+              <div  [ngClass]="{'invalid':  validateControl('email')}" class="form-collection position-relative mb-3">
                 <input formControlName="email" id="email" type="email" class="form-input" required type="text">
                 <label for="email" class="form-label position-absolute">Work Email *</label>
               </div>
-              <div class="form-collection position-relative mb-3">
+              <div [ngClass]="{'invalid':  validateControl('monthlyBudget')}" class="form-collection position-relative mb-3">
                 <input formControlName="monthlyBudget" id="budget" class="form-input" required type="text">
                 <label for="budget" class="form-label position-absolute">Monthly Advertising Budget *</label>
               </div>
@@ -55,7 +55,7 @@
                     <option *ngFor="let country of countries$ | async" [value]="country.code">{{country.country}}</option>
                   </select>
                 </div>
-                <div class="form-tel d-flex align-items-center justify-content-between align-self-center">
+                <div  [ngClass]="{'invalid-btm':  validateControl('phone')}" class="form-tel d-flex align-items-center justify-content-between align-self-center">
                   <span class="prefix">{{codeSelector.value}}</span>
                   <input formControlName="phone" type="tel"/>
                 </div>

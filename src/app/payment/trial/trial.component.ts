@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Store } from '@ngrx/store';
 import { User } from '../shared/user.model';
 import { getCountries, getLoading, State } from '../state';
@@ -34,12 +34,17 @@ export class TrialComponent implements OnInit {
 
   initializeForm(): void {
     this.trialForm = this.fb.group({
-      firstName: [ this.request.firstName, Validators.required],
-      lastName: [ this.request.lastName, Validators.required],
+      firstName: [ this.request.firstName, [Validators.required, Validators.pattern('^[a-zA-Z]*$')]],
+      lastName: [ this.request.lastName, [Validators.required, Validators.pattern('^[a-zA-Z]*$')]],
       email: [ this.request.email, Validators.email],
-      monthlyBudget: [ null , Validators.required],
-      phone: [ this.request.phoneNumber, Validators.required]
+      monthlyBudget: [ null, [Validators.required, Validators.pattern('^[0-9]*$')]],
+      phone: [ null, [Validators.required, Validators.pattern('^[0-9]*$')]]
     });
+  }
+
+  validateControl(controlName: string): boolean {
+    const control = this.trialForm.get(controlName) as AbstractControl;
+    return control.touched && control.errors !== null;
   }
 
   onSubmit(): void {

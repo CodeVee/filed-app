@@ -1,27 +1,40 @@
-# Filed
+<p align="center">
+  <img width="20%" height="20%" src="./src/assets/filed-logo-01.png?raw=true">
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
+<br />
 
-## Development server
+[![commitizen](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)]()
+[![PRs](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/CodeVee/filed/compare)
+[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![styled with prettier](https://img.shields.io/badge/linted_with-eslint-4b32c3.svg?style=flat-square)](https://github.com/prettier/prettier)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+> Filed Free Trial Sign Up Page built with Angular.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<p align="center">
+ <img src="./src/assets/file-screen.png?raw=true">
+</p>
 
-## Build
+## Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+-  **TypeScript**
+-  **SCSS**
+-  **Reactive Form**
+-  **Hot Toast**
+-  **Bootstrap**
+-  **NGRX**
 
-## Running unit tests
+## Installation
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Dependancies can be installed with **npm**:
 
-## Running end-to-end tests
+```bash
+npm install
+```
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run the below command to display in your browser at http://localhost:4200
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+npm start
+```

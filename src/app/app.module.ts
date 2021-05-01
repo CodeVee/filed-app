@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PaymentModule } from './payment/payment.module';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
+import { HotToastModule } from '@ngneat/hot-toast';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { EffectsModule } from '@ngrx/effects';
     StoreModule.forRoot({}, {}),
     EffectsModule.forRoot([]),
     PaymentModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HotToastModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

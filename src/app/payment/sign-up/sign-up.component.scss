@@ -2,8 +2,13 @@
   background-color: #eef1f5;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  .card {
+    margin: 16px;
+  }
 
   .wrapper {
     width: 200px;

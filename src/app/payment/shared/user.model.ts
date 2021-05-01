@@ -3,5 +3,5 @@ export interface User {
   lastName: string;
   email: string;
   monthlyBudget: number;
-  phoneNumber: number;
+  phoneNumber: string;
 }

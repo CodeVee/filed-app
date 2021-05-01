@@ -51,19 +51,18 @@
               <div class="form-container mb-3 d-flex justify-content-between">
                 <div class="form-select d-flex align-items-center position-relative">
                   <img src="assets/down-arrow.svg" alt="dropdown arrow" class="position-absolute">
-                  <select class="h-100">
-                    <option value="volvo">Romania</option>
-                    <option selected value="saab">Nigeria</option>
+                  <select [formControl]="codeSelector" class="h-100">
+                    <option *ngFor="let country of countries$ | async" [value]="country.code">{{country.country}}</option>
                   </select>
                 </div>
                 <div class="form-tel d-flex align-items-center justify-content-between align-self-center">
-                  <span class="prefix">+234</span>
+                  <span class="prefix">{{codeSelector.value}}</span>
                   <input formControlName="phone" type="tel"/>
                 </div>
               </div>
-              <button class="btn btn-block" [disabled]="!trialForm.valid || (loading | async)">
+              <button class="btn btn-block" [disabled]="!trialForm.valid || (loading$ | async)">
                 GET FREE TRIAL
-                <div [hidden]="!(loading | async)" class="spinner-border" role="status">
+                <div [hidden]="!(loading$ | async)" class="spinner-border" role="status">
                   <span class="sr-only">Loading...</span>
                 </div>
               </button>
@@ -187,7 +186,7 @@
         Copyright © 2020. All Rights Reserved.
       </span>
       <ul class="footer__nav mb-0 d-flex justify-content-between ml-auto">
-        <li>HOME</li>
+        <li><a routerLink="/">HOME</a></li>
         <li>FEATURES</li>
         <li>TERMS</li>
         <li>PRIVACY</li>

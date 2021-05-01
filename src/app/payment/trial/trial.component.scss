@@ -310,7 +310,10 @@
     width: 500px;
 
     li {
-      cursor: pointer;
+      a {
+        color: #FFFFFF;
+        text-decoration: none;
+      }
     }
   }
 

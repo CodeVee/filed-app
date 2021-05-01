@@ -2,16 +2,27 @@ import { Action, createReducer, on } from '@ngrx/store';
 import { User } from '../shared/user.model';
 import { PaymentApiActions, TrialPageActions } from './actions';
 
+interface CountryCode {
+  country: string;
+  code: string;
+}
+
+const Countries: CountryCode[] = [
+  { country: 'Romania', code: '+40' },
+  { country: 'Nigeria', code: '+234' },
+  { country: 'Nicaragua', code: '+78' }
+];
+
 export interface PaymentState {
   user: User | null;
   loading: boolean;
-  errorMessage: string;
+  countries: CountryCode[];
 }
 
 export const initialState: PaymentState = {
   user: null,
   loading: false,
-  errorMessage: ''
+  countries: Countries
 };
 
 export const featureKey = 'payment';

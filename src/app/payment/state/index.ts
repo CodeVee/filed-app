@@ -18,7 +18,7 @@ export const getLoading = createSelector(
   state => state.loading
 );
 
-export const getErrorMessage = createSelector(
+export const getCountries = createSelector(
   getPaymentFeatureState,
-  state => state.errorMessage
+  state => state.countries
 );
